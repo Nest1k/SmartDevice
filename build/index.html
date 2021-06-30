@@ -4,10 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>SmartDevice</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+  <header class="header">
+    <div class="container">
+
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo.svg">
+          <img class="header__logo" src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
+      </a>
+
+      <div class="header__links-wrap">
+
+        <div class="header__contact">
+          <a class="header__link header__link--mail" href="">
+            <span>info@sd.ru</span>
+          </a>
+          <a class="header__link header__link--phone" href="">
+            <span>+7 (495) 000 52 52</span>
+          </a>
+        </div>
+
+        <a class="header__rqst-link" href="">Заказать звонок</a>
+
+      </div>
+
+      <div class="header__text-wrap">
+        <h1>Печатные платы</h1>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="header__buttun-consultation" href="">
+          <span>Получить бесплатную консультацию</span>
+          <span>Бесплатная консультация</span>
+        </a>
+        <a class="header__scroll" href="">Скролл вниз</a>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/computer-board-desktop@1x.webp 1x, img/computer-board-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/computer-board-tablet@1x.webp 1x, img/computer-board-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/computer-board-mobile@1x.webp 1x, img/computer-board-mobile@2x.webp 2x">
+          <img src="img/computer-board-mobile@1x.png" srcset="img/computer-board-mobile@2x.png 2x" width="705" height="545" alt="Компьютерные платы">
+        </picture>
+      </div>
+    </div>
+  </header>
 </body>
 </html>

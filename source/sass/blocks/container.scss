@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  @media (max-width: $tablet-width-only) {
+    max-width: 720px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 90%;
+  }
+}
