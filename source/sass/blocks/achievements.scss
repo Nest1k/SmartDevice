@@ -1,0 +1,197 @@
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 82.5%;
+  margin: auto;
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+  }
+}
+
+.achievements__item {
+  border: 1px solid $dirty-white;
+  border-left: 3px solid $blue;
+  width: 48.4%;
+  min-height: 297px;
+  margin-bottom: 30px;
+  color: $blue;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+    border-color: $blue;
+    p {
+      color: $white;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 33.75px;
+    font-family: "Roboto Condensed", "Courier", monospace;
+    font-weight: 400;
+    padding-left: 42px;
+    margin-top: 19px;
+    margin-bottom: 14px;
+    @media (max-width: $tablet-width-only) {
+      padding-left: 25px;
+      margin-top: 9px;
+      margin-bottom: 0;
+    }
+    @media (max-width: $mobile-width-only) {
+      font-size: 20px;
+      padding-left: 25px;
+      margin-top: 9px;
+    }
+  }
+  p {
+    color: $grey;
+    font-size: 16px;
+    line-height: 21.5px;
+    padding-left: 42px;
+    padding-right: 40px;
+    @media (max-width: $tablet-width-only) {
+      padding-left: 25px;
+      padding-right: 21px;
+      margin-top: 7px;
+      margin-bottom: 27px;
+    }
+    @media (max-width: $mobile-width-only) {
+      padding-right: 10px;
+      margin-bottom: 28px;
+    }
+}
+  @media (max-width: $tablet-width-only) {
+    min-height: 232px;
+    width: 47.5%;
+    border-left: 2px solid $blue;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: -1px;
+  }
+}
+
+.achievements__item--watch {
+  &:hover:before {
+    background-image: url("../img/icon-stopwatch-hover.svg");
+  }
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-stopwatch.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 36px;
+    margin-left: 42px;
+    margin-top: 39px;
+    @media (max-width: $tablet-width-only) {
+      margin-left: 25px;
+      margin-top: 23px;
+    }
+  }
+  br {
+    display: none;
+    @media (max-width: $mobile-width-only) {
+      display: inline;
+    }
+  }
+}
+
+.achievements__item--hired {
+  &:hover:before {
+    background-image: url("../img/icon-hired-hover.svg");
+  }
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-hired.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    margin-left: 42px;
+    margin-top: 39px;
+    @media (max-width: $tablet-width-only) {
+      width: 32px;
+      height: 32px;
+      margin-left: 25px;
+      margin-top: 24px;
+    }
+  }
+}
+
+.achievements__item--detective {
+  &:hover:before {
+    background-image: url("../img/icon-detective-hover.svg");
+  }
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-detective.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 31px;
+    margin-left: 42px;
+    margin-top: 43px;
+    @media (max-width: $tablet-width-only) {
+      width: 30px;
+      height: 26px;
+      margin-left: 26px;
+      margin-top: 28px;
+    }
+  }
+  p {
+    @media (max-width: $tablet-width-only) {
+      padding-top: 7px;
+    }
+    @media (max-width: $mobile-width-only) {
+      padding-top: 5px;
+    }
+  }
+  span {
+    display: inline;
+    @media (max-width: $tablet-width-only) {
+      display: none;
+    }
+  }
+}
+
+.achievements__item--tag {
+  &:hover:before {
+    background-image: url("../img/icon-tag-hover.svg");
+  }
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-tag.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    margin-left: 42px;
+    margin-top: 39px;
+    @media (max-width: $tablet-width-only) {
+      width: 32px;
+      height: 32px;
+      margin-left: 26px;
+      margin-top: 25px;
+    }
+  }
+  p {
+    @media (max-width: $mobile-width-only) {
+      padding-right: 12px;
+      padding-top: 5px;
+    }
+  }
+  span {
+    @media (max-width: $tablet-width-only) {
+      display: inline;
+      }
+    @media (max-width: $tablet-width-only) {
+      display: none;
+    }
+  }
+}
