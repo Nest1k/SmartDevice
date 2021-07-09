@@ -4,18 +4,59 @@
   justify-content: space-between;
   width: 82.5%;
   margin: auto;
+  margin-top: 111px;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url("../img/triangle-center.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 35px;
+    right: 113px;
+    width: 873px;
+    height: 873px;
+    z-index: -1;
+    @media (max-width: $tablet-width-only) {
+      top: 38px;
+      right: -339px;
+    }
+    @media (max-width: $mobile-width-only) {
+      top: 602px;
+      right: -449px;
+    }
+  }
+  &::before {
+    content: "";
+    background-image: url("../img/triangle-right.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 284px;
+    right: -347px;
+    width: 336px;
+    height: 324px;
+    display: block;
+    @media (max-width: $tablet-width-only) {
+      content: none;
+    }
+  }
   @media (max-width: $tablet-width-only) {
     width: 100%;
+    margin-top: 52px;
+  }
+  @media (max-width: $mobile-width-only) {
+    margin-top: 38px;
   }
 }
 
 .achievements__item {
+  cursor: pointer;
   border: 1px solid $dirty-white;
   border-left: 3px solid $blue;
   width: 48.4%;
   min-height: 297px;
   margin-bottom: 30px;
   color: $blue;
+  background-color: $white;
   &:hover {
     background-color: $blue;
     color: $white;
@@ -35,31 +76,32 @@
     @media (max-width: $tablet-width-only) {
       padding-left: 25px;
       margin-top: 9px;
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
     @media (max-width: $mobile-width-only) {
       font-size: 20px;
       padding-left: 25px;
       margin-top: 9px;
+      margin-bottom: 10px;
     }
   }
   p {
     color: $grey;
     font-size: 16px;
-    line-height: 21.5px;
+    line-height: 21px;
     padding-left: 42px;
     padding-right: 40px;
     @media (max-width: $tablet-width-only) {
       padding-left: 25px;
       padding-right: 21px;
-      margin-top: 7px;
+      margin-top: 0px;
       margin-bottom: 27px;
     }
     @media (max-width: $mobile-width-only) {
       padding-right: 10px;
       margin-bottom: 28px;
     }
-}
+  }
   @media (max-width: $tablet-width-only) {
     min-height: 232px;
     width: 47.5%;
@@ -145,7 +187,7 @@
   }
   p {
     @media (max-width: $tablet-width-only) {
-      padding-top: 7px;
+      padding-top: 1px;
     }
     @media (max-width: $mobile-width-only) {
       padding-top: 5px;
@@ -177,10 +219,13 @@
       width: 32px;
       height: 32px;
       margin-left: 26px;
-      margin-top: 25px;
+      margin-top: 23px;
     }
   }
   p {
+    @media (max-width: $tablet-width-only) {
+      padding-top: 0;
+    }
     @media (max-width: $mobile-width-only) {
       padding-right: 12px;
       padding-top: 5px;

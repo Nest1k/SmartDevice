@@ -1,0 +1,202 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  max-width: 412px;
+  max-height: 546px;
+  padding: 33px 39px 36px 39px;
+  background-color: $blue;
+}
+
+
+@keyframes modalShow-x {
+  0% {
+    transform: translate(-1200px, -50%);
+  }
+
+  70% {
+    transform: translate(100px, -50%);
+  }
+
+  100% {
+    transform: translate(0, -50%);
+  }
+}
+
+.modal-show-x {
+  animation-name: modalShow-x;
+  animation-duration: 0.5s;
+}
+
+.modal h2 {
+  font-family: "Roboto Condensed", "Courier", monospace;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 39px;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: $white;
+}
+
+.modal p {
+  line-height: 21px;
+  font-size: 16px;
+  color: $white;
+  width: 90%;
+  margin-bottom: 32px;
+}
+
+.modal label {
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.8;
+  padding-left: 40px;
+}
+
+.modal input,
+.modal textarea {
+  display: block;
+  width: 94%;
+  height: 50px;
+  padding: 0 0 0 24px;
+  margin-bottom: 30px;
+  border: none;
+  color: $white;
+  background-color: rgba(255, 255, 255, 0.1);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 50px;
+    color: $white;
+    opacity: 1;
+    overflow: visible;
+  }
+  &:focus {
+    color: $black;
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.modal input {
+  height: 50px;
+  line-height: 50px;
+}
+
+.modal textarea {
+  overflow: auto;
+  resize: none;
+  height: 104px;
+  &::placeholder {
+    padding-top: 10px;
+    line-height: 22px;
+  }
+}
+
+.modal button {
+  display: block;
+  margin-bottom: 34px;
+}
+
+.modal__check {
+  position: relative;
+  cursor: pointer;
+  order: 2;
+  width: 70%;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.modal input[type="checkbox"] {
+  bottom: 0;
+  right: 0;
+}
+
+.modal input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $white;
+  background-image: none;
+}
+
+.modal input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal input[type="checkbox"]:focus + label {
+  outline: 1px dashed $white;
+  outline-offset: 2px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__button-submit {
+  font-family: "Roboto Condensed", "Courier", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $white;
+  text-decoration: none;
+  border: 1px solid $white;
+  border-radius: 5px;
+  padding: 14px 26px;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 4px;
+  &:hover {
+    color: $grey;
+    border-color: $grey;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.modal__button-close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 16px;
+    width: 1px;
+    background-color: $white;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 16px;
+    width: 1px;
+    background-color: $white;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

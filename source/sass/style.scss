@@ -2,9 +2,13 @@
 @import "global/fonts.scss";
 @import "global/base.scss";
 @import "global/variables.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/container.scss";
 @import "blocks/header.scss";
 @import "blocks/achievements.scss";
 @import "blocks/about-company.scss";
+@import "blocks/feedback.scss";
 @import "blocks/variants.scss";
 @import "blocks/footer.scss";
+@import "blocks/modal.scss";
+@import "blocks/bg-overlay.scss";

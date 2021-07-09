@@ -17,10 +17,11 @@
       font-size: 32px;
       line-height: 45px;
       padding-left: 0px;
-      padding-top: 50px;
+      padding-top: 0;
       margin-bottom: 49px;
       text-align: left;
       width: 613px;
+      padding-top: 49px;
     }
     @media (max-width: $mobile-width-only) {
       font-size: 28px;
@@ -32,6 +33,10 @@
   }
   @media (max-width: $tablet-width-only) {
     padding-bottom: 32px;
+    margin-top: 37px;
+  }
+  @media (max-width: $mobile-width-only) {
+    margin-top: 29px;
   }
 }
 
@@ -51,15 +56,20 @@
   justify-content: space-around;
   width: 62.5%;
   margin: 0 auto;
+  a {
+    color: $white;
+    &:hover {
+      color: $blue;
+    }
+  }
   h4 {
     font-size: 20px;
     line-height: 30px;
     font-family: "Roboto Condensed", "Courier", monospace;
     font-weight: 400;
-    color: $white;
     width: 170px;
-    margin-top: 40px;
-    padding-left: 42px;
+    margin-top: 49px;
+    padding-left: 47px;
     @media (max-width: $mobile-width-only) {
       margin-top: 21px;
       padding-left: 35px;
@@ -114,18 +124,18 @@
   a {
     background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-desctop@1x.jpg);
     @media (min-resolution: 1.5dppx) {
-      //background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-desctop@2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-desctop@2x.jpg);
     }
     @media (max-width: $tablet-width-only) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-tablet@1x.jpg);
       @media (min-resolution: 1.5dppx) {
-        //background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-tablet@2x.jpg);
+        background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-tablet@2x.jpg);
       }
     }
     @media (max-width: $mobile-width-only) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-mobile@1x.jpg);
       @media (min-resolution: 1.5dppx) {
-        // background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-mobile@2x.jpg);
+        background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/circuit-boards-mobile@2x.jpg);
       }
     }
   }
@@ -135,18 +145,18 @@
   a {
     background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-desctop@1x.jpg);
     @media (min-resolution: 1.5dppx) {
-      //background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-desctop@2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-desctop@2x.jpg);
     }
     @media (max-width: $tablet-width-only) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-tablet@1x.jpg);
       @media (min-resolution: 1.5dppx) {
-        //background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-tablet@2x.jpg);
+        background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-tablet@2x.jpg);
       }
     }
     @media (max-width: $mobile-width-only) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-mobile@1x.jpg);
       @media (min-resolution: 1.5dppx) {
-        //background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-mobile@2x.jpg);
+        background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/cpu-mobile@2x.jpg);
       }
     }
   }
@@ -156,18 +166,18 @@
   a {
     background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-desctop@1x.jpg);
     @media (min-resolution: 1.5dppx) {
-      //background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-desctop@2x.jpg);
+      background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-desctop@2x.jpg);
     }
     @media (max-width: $tablet-width-only) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-tablet@1x.jpg);
       @media (min-resolution: 1.5dppx) {
-        //background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-tablet@2x.jpg);
+        background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-tablet@2x.jpg);
       }
     }
     @media (max-width: $mobile-width-only) {
       background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-mobile@1x.jpg);
       @media (min-resolution: 1.5dppx) {
-        // background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-mobile@2x.jpg);
+        background-image: linear-gradient(rgba(27, 45, 55, 0.80), rgba(27, 45, 55, 0.80)), url(../img/led-mobile@2x.jpg);
       }
     }
   }

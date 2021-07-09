@@ -9,15 +9,62 @@
   }
 }
 
+.container--treangle-left {
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url("../img/triangle-left-top.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -68px;
+    left: -50px;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    @media (max-width: $tablet-width-only) {
+      content: none;
+    }
+  }
+  &::before {
+    content: "";
+    background-image: url("../img/triangle-left-bottom.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 47px;
+    left: -548px;
+    width: 636px;
+    height: 736px;
+    z-index: -1;
+    @media (max-width: $tablet-width-only) {
+      content: none;
+    }
+  }
+}
+
+.container--air {
+  max-width: 1920px;
+  min-height: 670px;
+  @media (max-width: $tablet-width-only) {
+    min-height: 664px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 640px;
+  }
+}
+
 .container--footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 47px;
+  margin-top: 49px;
   @media (max-width: $tablet-width-only) {
     display: flex;
+    margin-top: 20px;
   }
   @media (max-width: $mobile-width-only) {
     display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 737px;
   }
 }

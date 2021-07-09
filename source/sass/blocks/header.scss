@@ -6,7 +6,7 @@
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  z-index: -2;
+  z-index: 0;
 
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/header-background-desktop@2x.jpg");
@@ -14,8 +14,7 @@
 
   @media (max-width: $tablet-width-only) {
     display: block;
-    // padding-top: 189px;
-    min-height: 687px;
+    min-height: 686px;
     background-image: url("../img/header-background-tablet@1x.jpg");
 
     @media (min-resolution: 1.5dppx) {
@@ -24,7 +23,6 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    // padding-top: 286px;
     min-height: 646px;
     background-image: url("../img/header-background-mobile@1x.jpg");
 
@@ -62,6 +60,9 @@
   color: $white;
   font-size: 16px;
   line-height: 18px;
+  &:hover {
+    color: $blue;
+  }
   span {
     @media (max-width: $tablet-width-only) {
       display: none;
@@ -136,6 +137,10 @@
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Courier", monospace;
   font-weight: 700;
+  &:hover {
+    color: $blue;
+    border-color: $blue;
+  }
   @media (max-width: $tablet-width-only) {
     display: none;
   }
@@ -155,7 +160,7 @@
     @media (max-width: $tablet-width-only) {
       font-size: 60px;
       width: 350px;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
     @media (max-width: $mobile-width-only) {
       font-size: 40px;
@@ -236,6 +241,9 @@
   padding: 18px 45px;
   background-color: $blue;
   border-radius: 5px;
+  &:hover {
+    color: $grey;
+  }
   span:nth-child(2) {
     display: none;
     @media (max-width: $mobile-width-only) {
@@ -257,6 +265,7 @@
 }
 
 .header__scroll {
+  cursor: pointer;
   position: absolute;
   bottom: -148px;
   left: -37px;
@@ -264,6 +273,9 @@
   color: $white;
   opacity: 50%;
   font-size: 14px;
+  &:hover {
+    opacity: 100%;
+  }
   @media (max-width: $tablet-width-only) {
     display: none;
   }

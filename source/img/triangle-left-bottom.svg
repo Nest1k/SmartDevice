@@ -1,1 +1,8 @@
-<svg width="576" height="874" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M297.208 160.738v549.35l-475.751-274.675 475.751-274.675z" stroke="#EBEBEB"/><circle cx="296.896" cy="709.882" r="5" transform="rotate(-30 296.896 709.882)" fill="#F2F2F2"/><circle cx="297.053" cy="160.153" r="5" transform="rotate(-30 297.053 160.153)" fill="#F2F2F2"/></svg>
+<svg width="872" height="874" viewBox="0 0 872 874" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<path id="Polygon" d="M593.208 160.738L593.208 710.088L117.457 435.413L593.208 160.738Z" stroke="#EBEBEB"/>
+<circle id="Ellipse 2.5" cx="116.739" cy="435.154" r="5" transform="rotate(-30 116.739 435.154)" fill="#F2F2F2"/>
+<circle id="Ellipse 2.6" cx="592.896" cy="709.882" r="5" transform="rotate(-30 592.896 709.882)" fill="#F2F2F2"/>
+<circle id="Ellipse 2.2" cx="593.053" cy="160.153" r="5" transform="rotate(-30 593.053 160.153)" fill="#F2F2F2"/>
+</g>
+</svg>

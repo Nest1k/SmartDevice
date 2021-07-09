@@ -11,10 +11,21 @@
     bottom: 52px;
     opacity: 20%;
     @media (max-width: $tablet-width-only) {
-      bottom: 58px;
+      bottom: 116px;
+    }
+  }
+  &::after {
+    @media (max-width: $tablet-width-only) {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $grey-light;
+      top: 96px;
+      opacity: 20%;
     }
     @media (max-width: $mobile-width-only) {
-      bottom: 88px;
+      top: 260px;
     }
   }
 }
@@ -57,6 +68,8 @@
     }
     @media (max-width: $mobile-width-only) {
       width: 216px;
+      margin-top: 27px;
+      margin-bottom: 3px;
     }
   }
   @media (max-width: $mobile-width-only) {
@@ -78,6 +91,8 @@
   }
   @media (max-width: $mobile-width-only) {
     margin: auto;
+    margin-top: 37px;
+    margin-bottom: 23px;
   }
 }
 
@@ -86,6 +101,9 @@
   background-image: url("../img/icon-fb.svg");
   width: 27px;
   height: 27px;
+  &:hover {
+    opacity: 50%;
+  }
 }
 
 .footer__social-ok {
@@ -93,6 +111,9 @@
   background-image: url("../img/icon-od.svg");
   width: 27px;
   height: 27px;
+  &:hover {
+    opacity: 50%;
+  }
 }
 
 .footer__social-vk {
@@ -100,12 +121,28 @@
   background-image: url("../img/icon-vk.svg");
   width: 27px;
   height: 27px;
+  &:hover {
+    opacity: 50%;
+  }
 }
 
 .footer__parts-site {
   margin-left: -101px;
+  position: relative;
   @media (max-width: $tablet-width-only) {
     margin-left: 0;
+  }
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      border-bottom: 1px solid $grey-light;
+      opacity: 20%;
+      content: "";
+      bottom: -28px;
+      padding-left: 30px;
+      left: -15px;
+      width: 100%;
+    }
   }
   h3 {
     font-family: "Roboto Condensed", "Courier", monospace;
@@ -117,8 +154,22 @@
     color: $dark-grey;
     padding-left: 70px;
     margin-bottom: 24px;
+    cursor: pointer;
     @media (max-width: $tablet-width-only) {
       padding-left: 0;
+    }
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 32px;
+      position: relative;
+      &::after {
+        content: "";
+        height: 1px;
+        width: 16px;
+        background-color: $grey-light-line;
+        top: 7px;
+        right: 3px;
+        position: absolute;
+      }
     }
   }
   ul {
@@ -135,8 +186,32 @@
     line-height: 25px;
     padding-left: 70px;
     opacity: 50%;
+    &:hover {
+      color: $blue;
+    }
     @media (max-width: $tablet-width-only) {
       padding-left: 0;
+    }
+  }
+}
+
+.footer__parts-site--closed {
+  h3 {
+    @media (max-width: $mobile-width-only) {
+      &::before {
+        content: "";
+        height: 16px;
+        width: 1px;
+        background-color: $grey-light-line;
+        top: 0px;
+        right: 10px;
+        position: absolute;
+      }
+    }
+  }
+  ul {
+    @media (max-width: $mobile-width-only) {
+      display: none;
     }
   }
 }
@@ -154,6 +229,20 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 23px;
+    cursor: pointer;
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 32px;
+      position: relative;
+      &::after {
+        content: "";
+        height: 1px;
+        width: 16px;
+        background-color: $grey-light-line;
+        top: 7px;
+        right: -8px;
+        position: absolute;
+      }
+    }
   }
   p {
     opacity: 50%;
@@ -165,9 +254,41 @@
     opacity: 50%;
     font-size: 15px;
     line-height: 24px;
+    &:hover {
+      color: $blue;
+    }
   }
   @media (max-width: $tablet-width-only) {
     margin-right: 11px;
+  }
+  @media (max-width: $mobile-width-only) {
+    margin-top: 56px;
+  }
+}
+
+.footer__contact-site--closed {
+  h3 {
+    @media (max-width: $mobile-width-only) {
+      &::before {
+        content: "";
+        height: 16px;
+        width: 1px;
+        background-color: $grey-light-line;
+        top: 0px;
+        right: -1px;
+        position: absolute;
+      }
+    }
+  }
+  p {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+  ul {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 }
 
@@ -190,6 +311,7 @@
     }
     @media (max-width: $mobile-width-only) {
       text-align: center;
+      margin-bottom: 20px;
     }
   }
   @media (max-width: $tablet-width-only) {
@@ -199,6 +321,7 @@
   @media (max-width: $mobile-width-only) {
     text-align: center;
     display: block;
+    margin-top: 53px;
   }
 }
 

@@ -7,26 +7,32 @@
   background-image: url("../img/2005-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: left 93px top 4px;
+  span:nth-child(1) {
+    display: none;
+  }
   @media (min-resolution: 1.5dppx) {
-    //background-image: url("../img/2005-desktop@2x.png");
+    background-image: url("../img/2005-desktop@2x.png");
   }
   @media (max-width: $tablet-width-only) {
     margin-top: 0px;
     padding-left: 188px;
-    padding-bottom: 52px;
+    padding-bottom: 50px;
     width: 74%;
     background-image: url("../img/2005-tablet@1x.png");
     background-position: left -25px top -2px;
     @media (min-resolution: 1.5dppx) {
-      //background-image: url("../img/2005-tablet@2x.png");
+      background-image: url("../img/2005-tablet@2x.png");
     }
-    span {
+    span:nth-child(2) {
       display: none;
+    }
+    span:nth-child(1) {
+      display: inline;
     }
   }
   @media (max-width: $mobile-width-only) {
     padding-left: 0;
-    margin-top: 31px;
+    margin-top: 0;
     width: 100%;
     background-image: none;
     padding-bottom: 37px;
@@ -46,6 +52,7 @@
     @media (max-width: $mobile-width-only) {
       font-size: 28px;
       line-height: 40px;
+      margin-top: 36px;
     }
   }
   p {
@@ -72,6 +79,10 @@
     padding: 14px 47px 13px 50px;
     border-radius: 5px;
     margin-top: 18px;
+    &:hover {
+      color: $grey;
+      border-color: $grey;
+    }
     @media (max-width: $tablet-width-only) {
       margin-top: 20px;
     }
