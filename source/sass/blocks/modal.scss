@@ -64,7 +64,6 @@
 .modal textarea {
   display: block;
   width: 94%;
-  height: 50px;
   padding: 0 0 0 24px;
   margin-bottom: 30px;
   border: none;
@@ -72,7 +71,6 @@
   background-color: rgba(255, 255, 255, 0.1);
   &::placeholder {
     font-size: 16px;
-    line-height: 50px;
     color: $white;
     opacity: 1;
     overflow: visible;
@@ -94,10 +92,7 @@
   overflow: auto;
   resize: none;
   height: 104px;
-  &::placeholder {
-    padding-top: 10px;
-    line-height: 22px;
-  }
+  padding-top: 13px;
 }
 
 .modal button {
@@ -181,6 +176,7 @@
   right: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   &::before {
     position: absolute;
     content: "";

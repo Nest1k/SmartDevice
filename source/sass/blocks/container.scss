@@ -9,6 +9,16 @@
   }
 }
 
+.container--header {
+  width: 80%;
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 90%;
+  }
+}
+
 .container--treangle-left {
   position: relative;
   &::after {
@@ -57,9 +67,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 49px;
+  width: 90%;
   @media (max-width: $tablet-width-only) {
     display: flex;
     margin-top: 20px;
+    width: auto;
   }
   @media (max-width: $mobile-width-only) {
     display: block;

@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  input:not([type=checkbox]):not([type=radio]),
+  textarea,
+  select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
 }
 
 .main {

@@ -11,6 +11,9 @@
     bottom: 52px;
     opacity: 20%;
     @media (max-width: $tablet-width-only) {
+      bottom: 59px;
+    }
+    @media (max-width: $mobile-width-only) {
       bottom: 116px;
     }
   }
@@ -31,6 +34,7 @@
 }
 
 .footer__social-wrap {
+  width: 19%;
   p {
     display: none;
     @media (max-width: $tablet-width-only) {
@@ -53,7 +57,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    padding-bottom: 46px;
+    padding-bottom: 20px;
   }
   @media (max-width: $mobile-width-only) {
     display: block;
@@ -81,13 +85,12 @@
 .footer__social {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 125px;
   margin-top: 50px;
-  margin-left: -6px;
   @media (max-width: $tablet-width-only) {
     margin-top: 11px;
     margin-left: 0;
-    margin-right: -7px;
   }
   @media (max-width: $mobile-width-only) {
     margin: auto;
@@ -127,10 +130,17 @@
 }
 
 .footer__parts-site {
-  margin-left: -101px;
+  //margin-left: -101px;
+  width: 39%;
+  max-width: 495px;
   position: relative;
   @media (max-width: $tablet-width-only) {
     margin-left: 0;
+    width: auto;
+  }
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    max-width: 100%;
   }
   &::before {
     @media (max-width: $mobile-width-only) {
@@ -138,7 +148,7 @@
       border-bottom: 1px solid $grey-light;
       opacity: 20%;
       content: "";
-      bottom: -28px;
+      bottom: 0px;
       padding-left: 30px;
       left: -15px;
       width: 100%;
@@ -152,22 +162,24 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $dark-grey;
-    padding-left: 70px;
     margin-bottom: 24px;
-    cursor: pointer;
+    cursor: auto;
     @media (max-width: $tablet-width-only) {
       padding-left: 0;
+      padding-top: 27px;
     }
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 32px;
+      margin-bottom: 0px;
+      padding-bottom: 27px;
       position: relative;
+      cursor: pointer;
       &::after {
         content: "";
         height: 1px;
         width: 16px;
         background-color: $grey-light-line;
-        top: 7px;
-        right: 3px;
+        top: 33px;
+        right: 0;
         position: absolute;
       }
     }
@@ -184,7 +196,7 @@
     color: $dark-grey;
     font-size: 15px;
     line-height: 25px;
-    padding-left: 70px;
+    padding-left: 0;
     opacity: 50%;
     &:hover {
       color: $blue;
@@ -203,8 +215,8 @@
         height: 16px;
         width: 1px;
         background-color: $grey-light-line;
-        top: 0px;
-        right: 10px;
+        top: 26px;
+        right: 8px;
         position: absolute;
       }
     }
@@ -221,6 +233,7 @@
   font-size: 15px;
   line-height: 25px;
   margin-right: 3px;
+  width: 24%;
   h3 {
     font-family: "Roboto Condensed", "Courier", monospace;
     font-size: 15px;
@@ -229,17 +242,23 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 23px;
-    cursor: pointer;
+    cursor: auto;
+    @media (max-width: $tablet-width-only) {
+      padding-top: 27px;
+    }
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 32px;
+      margin-bottom: 0;
       position: relative;
+      cursor: pointer;
+      margin-top: 0;
+      padding-bottom: 17px;
       &::after {
         content: "";
         height: 1px;
         width: 16px;
         background-color: $grey-light-line;
-        top: 7px;
-        right: -8px;
+        top: 35px;
+        right: 0;
         position: absolute;
       }
     }
@@ -248,6 +267,9 @@
     opacity: 50%;
     font-size: 15px;
     margin-bottom: 0;
+    @media (max-width: $mobile-width-only) {
+      width: 90%;
+    }
   }
   a {
     color: $dark-grey;
@@ -260,9 +282,10 @@
   }
   @media (max-width: $tablet-width-only) {
     margin-right: 11px;
+    width: auto;
   }
   @media (max-width: $mobile-width-only) {
-    margin-top: 56px;
+    width: 100%;
   }
 }
 
@@ -274,8 +297,8 @@
         height: 16px;
         width: 1px;
         background-color: $grey-light-line;
-        top: 0px;
-        right: -1px;
+        top: 27px;
+        right: 7px;
         position: absolute;
       }
     }
@@ -328,7 +351,8 @@
 .footer__footnotes-confidentiality {
   display: flex;
   justify-content: space-between;
-  width: 816px;
+  max-width: 816px;
+  width: 75%;
   a {
     color: $dark-grey;
   }
