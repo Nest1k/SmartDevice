@@ -7,11 +7,12 @@
   left: 0;
   right: 0;
   max-width: 412px;
-  max-height: 546px;
+  height: 100%;
+  max-height: 552px;
   padding: 33px 39px 36px 39px;
   background-color: $blue;
+  overflow-y: scroll;
 }
-
 
 @keyframes modalShow-x {
   0% {
